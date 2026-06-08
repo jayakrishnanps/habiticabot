@@ -1,8 +1,3 @@
-/**
- * Quick script to fetch your Party ID from Habitica
- * Run this once to get your party ID, then update .env file
- */
-
 require('dotenv').config();
 const axios = require('axios');
 
