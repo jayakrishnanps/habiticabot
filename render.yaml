@@ -1,0 +1,21 @@
+services:
+  # Web Service configuration for Render.com
+  - type: web
+    name: habitica-party-bot
+    env: node
+    # Build command - install dependencies
+    buildCommand: npm install
+    # Start command - run the bot
+    startCommand: npm start
+    # Environment variables (set these in Render dashboard)
+    envVars:
+      - key: HABITICA_USER_ID
+        sync: false
+      - key: HABITICA_API_KEY
+        sync: false
+      - key: PARTY_ID
+        sync: false
+      - key: NODE_ENV
+        value: production
+    # Health check configuration
+    healthCheckPath: /health
