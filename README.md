@@ -10,10 +10,6 @@ A minimalistic bot for managing your Habitica party. It welcomes new members, up
 4. **Party ID**: Run `node get-party-id.js` to fetch your `PARTY_ID` and add it to `.env`.
 5. **Run**: `npm start`
 
-## Deployment
-
-1. **Render.com**: Deploy as a Web Service. Add your environment variables (`HABITICA_USER_ID`, `HABITICA_API_KEY`, `PARTY_ID`).
-2. **Webhook**: Register your Render webhook URL (`https://<your-render-url>/webhook/chat`) via the Habitica API or Postman for `groupChatReceived` events.
 
 ## Features
 - **Welcome Bot**: Automatically greets new members.

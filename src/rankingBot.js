@@ -145,28 +145,24 @@ function calculateRankings(members) {
 
 function generateLeaderboard(rankings) {
     const now = new Date();
-    const dateString = now.toLocaleDateString('en-US', {
-        timeZone: 'Asia/Kolkata',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
+    const dateOpts = { timeZone: 'Asia/Kolkata', day: 'numeric', month: 'long', year: 'numeric' };
+    const timeOpts = { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: '2-digit', hour12: true };
+    const dateString = now.toLocaleDateString('en-GB', dateOpts);
+    const timeString = now.toLocaleTimeString('en-US', timeOpts);
+    const fullDateString = `${dateString}, ${timeString} IST`;
 
-    let leaderboard = `Cumulative Weekly Quest Damage Leaderboard\n`;
-    leaderboard += `Updated: ${dateString}\n\n`;
+    let leaderboard = `## 🏆 Weekly Rankings\n`;
+    leaderboard += `**Updated:** ${fullDateString}\n\n`;
 
     if (rankings.length === 0) {
         leaderboard += `No damage dealt so far this week.\n`;
         return leaderboard;
     }
 
-    leaderboard += `Rank | Player | Weekly Damage Dealt\n`;
-    leaderboard += `---|---|---\n`;
-
     rankings.forEach((member, index) => {
         const rank = index + 1;
         const damageString = Number.isInteger(member.damage) ? member.damage.toString() : member.damage.toFixed(1);
-        leaderboard += `${rank} | ${member.username} | ${damageString}\n`;
+        leaderboard += `${rank}. **${member.username}** — ${damageString} Damage\n`;
     });
 
     return leaderboard;
