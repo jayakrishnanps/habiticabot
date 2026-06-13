@@ -1,0 +1,63 @@
+{
+  "leaderOnly": {
+    "challenges": false,
+    "getGems": false
+  },
+  "quest": {
+    "progress": {
+      "collect": {}
+    },
+    "active": false,
+    "members": {},
+    "extra": {}
+  },
+  "tasksOrder": {
+    "habits": [],
+    "dailys": [],
+    "todos": [],
+    "rewards": []
+  },
+  "purchased": {
+    "plan": {
+      "consecutive": {
+        "count": 0,
+        "offset": 0,
+        "gemCapExtra": 0,
+        "trinkets": 0
+      },
+      "quantity": 1,
+      "extraMonths": 0,
+      "gemsBought": 0,
+      "cumulativeCount": 0,
+      "mysteryItems": []
+    }
+  },
+  "cron": {},
+  "_id": "82ea5459-086d-495e-8f70-f47d6893c4fb",
+  "name": "kafka's Party",
+  "type": "party",
+  "privacy": "private",
+  "chat": [],
+  "memberCount": 1,
+  "challengeCount": 0,
+  "balance": 0,
+  "managers": {},
+  "categories": [],
+  "leader": {
+    "auth": {
+      "local": {
+        "username": "jykh"
+      }
+    },
+    "flags": {
+      "verifiedUsername": true
+    },
+    "profile": {
+      "name": "kafka"
+    },
+    "_id": "8b30cf3d-c0c1-4360-8858-79389aeeac6f",
+    "id": "8b30cf3d-c0c1-4360-8858-79389aeeac6f"
+  },
+  "summary": "kafka's Party",
+  "id": "82ea5459-086d-495e-8f70-f47d6893c4fb"
+}

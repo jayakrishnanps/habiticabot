@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const { handleWebhook } = require('./welcomeBot');
 const { initializeScheduler } = require('./scheduler');
+const { updateDailyRankings } = require('./rankingBot');
 
 const app = express();
 
@@ -95,6 +96,12 @@ function startServer() {
         initializeScheduler();
 
         console.log('🎉 Bot is ready and waiting for events!\n');
+        
+        // Run immediately on startup
+        console.log('🚀 Triggering initial startup ranking update...');
+        updateDailyRankings().catch(err => {
+            console.error('❌ Failed to update rankings during startup:', err.message);
+        });
     });
 }
 

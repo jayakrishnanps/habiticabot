@@ -4,10 +4,11 @@ A minimalistic bot for managing your Habitica party. It welcomes new members, up
 
 ## Setup
 
-1. **Credentials**: Get your Habitica `User ID`, `API Token`, and your `Party ID`.
+1. **Credentials**: Get your Habitica `User ID` and `API Token`.
 2. **Install**: Clone this repository and run `npm install`.
-3. **Environment**: Copy `.env.example` to `.env` and fill in your credentials.
-4. **Run**: `npm start`
+3. **Environment**: Copy `.env.example` to `.env` and fill in your user credentials.
+4. **Party ID**: Run `node get-party-id.js` to fetch your `PARTY_ID` and add it to `.env`.
+5. **Run**: `npm start`
 
 ## Deployment
 

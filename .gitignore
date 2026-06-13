@@ -17,5 +17,15 @@ npm-debug.log*
 .idea/
 *.swp
 *.swo
+
+# Local data storage
+data/
+
 # Added by code-review-graph
 .code-review-graph/
+.gemini/
+.qoder/
+.claude/
+.cursor/
+.codex/
+.agentS/

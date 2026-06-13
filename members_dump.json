@@ -1,0 +1,191 @@
+[
+  {
+    "_id": "8b30cf3d-c0c1-4360-8858-79389aeeac6f",
+    "auth": {
+      "local": {
+        "username": "jykh"
+      },
+      "timestamps": {
+        "created": "2026-06-13T04:51:41.854Z",
+        "loggedin": "2026-06-13T04:51:41.854Z",
+        "updated": "2026-06-13T05:07:07.737Z"
+      }
+    },
+    "achievements": {
+      "ultimateGearSets": {
+        "healer": false,
+        "wizard": false,
+        "rogue": false,
+        "warrior": false
+      },
+      "streak": 0,
+      "challenges": [],
+      "perfect": 0,
+      "quests": {}
+    },
+    "backer": {},
+    "contributor": {},
+    "flags": {
+      "verifiedUsername": true,
+      "classSelected": false
+    },
+    "items": {
+      "gear": {
+        "equipped": {
+          "armor": "armor_base_0",
+          "head": "head_base_0",
+          "shield": "shield_base_0"
+        },
+        "costume": {
+          "armor": "armor_base_0",
+          "head": "head_base_0",
+          "shield": "shield_base_0"
+        },
+        "owned": {
+          "headAccessory_special_blackHeadband": true,
+          "headAccessory_special_blueHeadband": true,
+          "headAccessory_special_greenHeadband": true,
+          "headAccessory_special_pinkHeadband": true,
+          "headAccessory_special_redHeadband": true,
+          "headAccessory_special_whiteHeadband": true,
+          "headAccessory_special_yellowHeadband": true,
+          "eyewear_special_blackTopFrame": true,
+          "eyewear_special_blueTopFrame": true,
+          "eyewear_special_greenTopFrame": true,
+          "eyewear_special_pinkTopFrame": true,
+          "eyewear_special_redTopFrame": true,
+          "eyewear_special_whiteTopFrame": true,
+          "eyewear_special_yellowTopFrame": true,
+          "eyewear_special_blackHalfMoon": true,
+          "eyewear_special_blueHalfMoon": true,
+          "eyewear_special_greenHalfMoon": true,
+          "eyewear_special_pinkHalfMoon": true,
+          "eyewear_special_redHalfMoon": true,
+          "eyewear_special_whiteHalfMoon": true,
+          "eyewear_special_yellowHalfMoon": true
+        }
+      },
+      "special": {
+        "snowball": 0,
+        "spookySparkles": 0,
+        "shinySeed": 0,
+        "seafoam": 0,
+        "valentine": 0,
+        "valentineReceived": [],
+        "nye": 0,
+        "nyeReceived": [],
+        "greeting": 0,
+        "greetingReceived": [],
+        "thankyou": 0,
+        "thankyouReceived": [],
+        "birthday": 0,
+        "birthdayReceived": [],
+        "congrats": 0,
+        "congratsReceived": [],
+        "getwell": 0,
+        "getwellReceived": [],
+        "goodluck": 0,
+        "goodluckReceived": []
+      },
+      "lastDrop": {
+        "count": 0,
+        "date": "2026-06-13T04:51:41.856Z"
+      },
+      "currentPet": "",
+      "currentMount": "",
+      "pets": {},
+      "eggs": {},
+      "hatchingPotions": {},
+      "food": {},
+      "mounts": {},
+      "quests": {
+        "dustbunnies": 1
+      }
+    },
+    "party": {
+      "quest": {
+        "progress": {
+          "up": 0,
+          "down": 0,
+          "collectedItems": 0,
+          "collect": {}
+        },
+        "RSVPNeeded": false
+      },
+      "order": "level",
+      "orderAscending": "ascending",
+      "_id": "82ea5459-086d-495e-8f70-f47d6893c4fb"
+    },
+    "preferences": {
+      "size": "slim",
+      "hair": {
+        "color": "black",
+        "base": 0,
+        "bangs": 2,
+        "beard": 0,
+        "mustache": 0,
+        "flower": 0
+      },
+      "skin": "f5a76e",
+      "shirt": "black",
+      "chair": "chair_none",
+      "costume": false,
+      "sleep": false,
+      "disableClasses": false,
+      "background": "violet",
+      "tasks": {
+        "groupByChallenge": false,
+        "confirmScoreNotes": false,
+        "mirrorGroupTasks": [],
+        "activeFilter": {
+          "habit": "all",
+          "daily": "all",
+          "todo": "remaining",
+          "reward": "all"
+        }
+      }
+    },
+    "profile": {
+      "name": "kafka"
+    },
+    "stats": {
+      "buffs": {
+        "str": 0,
+        "int": 0,
+        "per": 0,
+        "con": 0,
+        "stealth": 0,
+        "streaks": false,
+        "snowball": false,
+        "spookySparkles": false,
+        "shinySeed": false,
+        "seafoam": false
+      },
+      "training": {
+        "int": 0,
+        "per": 0,
+        "str": 0,
+        "con": 0
+      },
+      "hp": 50,
+      "mp": 10,
+      "exp": 0,
+      "gp": 0,
+      "lvl": 1,
+      "class": "warrior",
+      "points": 0,
+      "str": 0,
+      "con": 0,
+      "int": 0,
+      "per": 0,
+      "toNextLevel": 25,
+      "maxHealth": 50,
+      "maxMP": 30
+    },
+    "inbox": {
+      "optOut": false
+    },
+    "loginIncentives": 0,
+    "id": "8b30cf3d-c0c1-4360-8858-79389aeeac6f"
+  }
+]

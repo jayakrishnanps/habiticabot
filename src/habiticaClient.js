@@ -6,25 +6,22 @@ class HabiticaClient {
     this.userId = process.env.HABITICA_USER_ID;
     this.apiKey = process.env.HABITICA_API_KEY;
     this.partyId = process.env.PARTY_ID;
-    this.requestTimestamps = [];
+    this.lastRequestTimestamp = 0;
   }
 
   async checkRateLimit() {
     const now = Date.now();
-    const sixtySecondsAgo = now - 60000;
     
-    this.requestTimestamps = this.requestTimestamps.filter(
-      timestamp => timestamp > sixtySecondsAgo
-    );
-    
-    if (this.requestTimestamps.length >= 30) {
-      const oldestTimestamp = this.requestTimestamps[0];
-      const waitTime = 60000 - (now - oldestTimestamp);
-      console.log(`⏳ Rate limit reached. Waiting ${waitTime}ms...`);
-      await new Promise(resolve => setTimeout(resolve, waitTime));
+    if (this.lastRequestTimestamp > 0) {
+      const timeSinceLastRequest = now - this.lastRequestTimestamp;
+      if (timeSinceLastRequest < 30000) {
+        const waitTime = 30000 - timeSinceLastRequest;
+        console.log(`Waiting ${waitTime}ms to comply with background tool guidelines...`);
+        await new Promise(resolve => setTimeout(resolve, waitTime));
+      }
     }
     
-    this.requestTimestamps.push(Date.now());
+    this.lastRequestTimestamp = Date.now();
   }
 
   async request(method, endpoint, data = null) {
@@ -63,7 +60,7 @@ class HabiticaClient {
   }
 
   async getPartyMembers() {
-    const response = await this.request('GET', `/groups/${this.partyId}/members`);
+    const response = await this.request('GET', `/groups/${this.partyId}/members?includeAllPublicFields=true`);
     return response.data;
   }
 
